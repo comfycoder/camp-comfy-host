@@ -1,0 +1,28 @@
+<h1>Search Flicker</h1>
+<p>
+  <button type="button" class="btn btn-primary" [routerLink]="['/home']">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      Back
+  </button>
+</p>
+<form class="search-form">
+  <label class="search-label">Search for Flickr Images:</label>
+  <div class="input-group">
+    <input [(ngModel)]="searchString" name="search-input" type="text" class="form-control" 
+      autocomplete="off" (keydown.enter)="search()"     />
+    <span (click)="search()" class="input-group-addon" id="btnGroupAddon2">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </span>
+  </div>
+</form>
+<div class="spacer-15"></div>
+<div class="row">
+  <div class="col-xl-12" *ngFor="let photo of photos">
+    <div class="card">
+      <img [src]="photo.url" alt="Avatar" style="width:100%;height:auto;">
+      <div class="container">
+        <p class="card-text">{{photo.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>
