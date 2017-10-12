@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs/Subscription';
 declare var Spinner: any;
 
 @Component({
-    selector: 'cc-spinner',
+    selector: 'app-spinner',
     templateUrl: './spinner.component.html',
     styleUrls: ['./spinner.component.scss']
 })

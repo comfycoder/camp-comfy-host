@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import { SpinnerService } from './services/spinner.service';
 
 @Component({
-  selector: 'cc-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

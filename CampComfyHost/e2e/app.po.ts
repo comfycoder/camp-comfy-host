@@ -6,6 +6,6 @@ export class CampComfyPage {
   }
 
   getParagraphText() {
-    return element(by.css('cc-root h2')).getText();
+    return element(by.css('app-root h2')).getText();
   }
 }

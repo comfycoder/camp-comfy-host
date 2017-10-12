@@ -6,7 +6,7 @@ import { FlickrService } from '../services/flickr.service';
 import { SpinnerService } from '../services/spinner.service';
 
 @Component({
-  selector: 'cc-search-flickr',
+  selector: 'app-search-flickr',
   templateUrl: './search-flickr.component.html',
   styleUrls: ['./search-flickr.component.scss']
 })
