@@ -1,12 +1,6 @@
 # Camp Comfy with ASP.NET Core Host Application
 
-## Install the npm packages
+## Add your Angular application
 
-npm install
-
-## Build the Angular application
-
-npm run build:prod
-
-## Run the AP.NET Core application
+Copy your "built" Angular application from the angular project "dist" folder to the ASP.NET Core web app "wwwroot" folder.
 
