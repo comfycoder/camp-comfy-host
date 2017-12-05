@@ -4,9 +4,9 @@
 
 npm install
 
-## Build the Angular application
+## Add your Angular application
 
-npm run build:prod
+Copy your "built" Angular application from the angular project "dist" folder to the ASP.NET Core web app "wwwroot" folder.
 
 ## Run the AP.NET Core application
 
