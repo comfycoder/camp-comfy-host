@@ -30,11 +30,15 @@ namespace CampComfyHost.Controllers
 
             if (!string.IsNullOrWhiteSpace(webRootPath))
             {
-                indexPath = Path.Combine(webRootPath, "index.html");
+                indexPath = Path.Combine(webRootPath, "", "index.html");
 
                 if (System.IO.File.Exists(indexPath))
                 {
                     indexHtml = System.IO.File.ReadAllText(indexPath);
+                }
+                else
+                {
+                    return StatusCode(500, "Missing index.html in wwwroot folder.");
                 }
             }
             else
